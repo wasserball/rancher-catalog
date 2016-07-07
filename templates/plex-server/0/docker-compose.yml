@@ -15,3 +15,4 @@ plex:
   volumes:
     - ${PATHCONFIG}:/config
     - ${PATHMEDIA}:/data
+  net: "host"

@@ -11,13 +11,13 @@
     - variable: "PATHCONFIG"
       type: "string"
       label: "Config Path"
-      description: persistang Path to your Plex Config (/home/nick/plex-config, ...)
+      description: persistang Path to your Plex Config (/home/nick/plex, ...)
       default: '/home'
     - variable: "PATHMEDIA"
       type: "string"
       label: "Media Path"
       description: the Path to your library (/data/media, or a nfs mount /mnt:/media, ...)
-      default: 32400
+      default: '/data/media'
     - variable: "PUID"
       type: "string"
       label: "PUID"
