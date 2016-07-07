@@ -1,0 +1,11 @@
+.catalog:
+  name: Plex Server
+  version: v0.1
+  description: Plex Media Server
+  questions:
+    - variable: "port"
+      type: "string"
+      label: "PORT"
+      description: |
+        Frontend Port of Plex
+      default: 32400
