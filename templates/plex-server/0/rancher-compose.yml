@@ -26,5 +26,5 @@
       type: "string"
       label: "PGID"
       description: PGID (not required)
-Plex:
+plex:
   scale: 1

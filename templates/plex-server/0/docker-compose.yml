@@ -1,11 +1,5 @@
 plex:
   image: linuxserver/plex
-  volumes:
-      - /data/files:/data/files
-  links:
-    - converter
-    - auth
-    - html-converter
   environment:
     - VERSION=latest
     - PUID=${PUID}

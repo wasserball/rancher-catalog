@@ -1,0 +1,7 @@
+plexconnect:
+  image: pducharme/plexconnect
+  ports:
+    - 80:80
+  volumes:
+    - /etc/localtime:/etc/localtime:ro
+
