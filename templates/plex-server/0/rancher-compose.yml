@@ -16,8 +16,8 @@
     - variable: "PATHMEDIA"
       type: "string"
       label: "Media Path"
-      description: the Path to your library (/data/media, or a nfs mount /mnt:/media, ...)
-      default: '/data/media'
+      description: the Path to your library (/media, or a nfs mount /mnt:/media, ...)
+      default: '/media'
     - variable: "PUID"
       type: "string"
       label: "PUID"
