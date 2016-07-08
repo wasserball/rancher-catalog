@@ -25,7 +25,7 @@
       default: 8081
     - variable: "PATHCONFIGSICKBEARD"
       type: "string"
-      label: "nzbget config Path"
+      label: "sickbeard config Path"
       description: Config-Path
       default: "/media/confignsickbeard"
     - variable: "PATHDOWNLOADSICKBEARD"
