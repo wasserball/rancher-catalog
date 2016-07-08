@@ -1,5 +1,5 @@
 nzbget:
-  image: inuxserver/nzbget
+  image: linuxserver/nzbget
   environment:
     - PUID=${PUID}
     - PGID=${PGID}
@@ -10,7 +10,7 @@ nzbget:
     - ${PATHDOWNLOADSNZBGET}:/downloads
   net: "host"
 sickbeard:
-  image: inuxserver/sickbeard
+  image: linuxserver/sickbeard
   environment:
     - PUID=${PUID}
     - PGID=${PGID}
