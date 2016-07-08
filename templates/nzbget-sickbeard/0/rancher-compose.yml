@@ -6,7 +6,7 @@
     - variable: "nzbget"
       type: "string"
       label: "nzbget PORT"
-      description: Frontend Port of nzbget
+      description: Frontend Port of nzbget (UN= nzbget, PW=tegbzn6789)
       default: 6789
     - variable: "PATHCONFIGNZBGET"
       type: "string"
