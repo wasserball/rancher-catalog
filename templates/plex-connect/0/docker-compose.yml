@@ -2,4 +2,6 @@ plexconnect:
   image: wasserball/plexconnect
   ports:
     - 80:80
+  net: "host"
+  hostname: name
 
