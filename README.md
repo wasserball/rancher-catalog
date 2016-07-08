@@ -35,7 +35,18 @@ click on View Details, Choose a Version, modify some settings (Name, Port) and h
 ## Open Plex
 Open a Web-Browser and got to `<ip of your server>:32400/web/index.html`.
 
-## Watch :-)
+```
+watch :-)
+```
+
+# PlexConnect
+
+## Install
+
+click on View Details, Choose a Version and hit Launch.
+
+## Config
+Doku @ [wasserball/plexconnect](https://github.com/wasserball/plexconnect)
 
 
 
