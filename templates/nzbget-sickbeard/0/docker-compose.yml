@@ -1,0 +1,23 @@
+nzbget:
+  image: inuxserver/nzbget
+  environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+  ports:
+    - ${nzbget}:32400
+  volumes:
+    - ${PATHCONFIGNZBGET}:/config
+    - ${PATHDOWNLOADSNZBGET}:/downloads
+  net: "host"
+sickbeard:
+  image: inuxserver/sickbeard
+  environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
+  ports:
+    - ${nzbget}:32400
+  volumes:
+    - ${PATHCONFIGSICKBEARD}:/config
+    - ${PATHDOWNLOADSICKBEARD}:/downloads
+  net: "host"
+
