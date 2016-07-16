@@ -1,0 +1,14 @@
+prestashop:
+  image: prestashop/prestashop
+  environment:
+    - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    - MYSQL_DATABASE=${MYSQL_DATABASE}
+    - MYSQL_USER=${MYSQL_USER}
+    - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+  ports:
+    - ${PORT}:80
+  links:
+    - mysql
+  net: "host"
+mysql:
+  image: mysql
