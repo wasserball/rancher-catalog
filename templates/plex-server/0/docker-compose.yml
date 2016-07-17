@@ -9,4 +9,4 @@ plex:
   volumes:
     - ${PATHCONFIG}:/config
     - ${PATHMEDIA}:/data
-  net: "host"
+  net: ${NET}

@@ -16,7 +16,7 @@
     - variable: "PATHMEDIA"
       type: "string"
       label: "Media Path"
-      description: the Path to your library (/media, or a nfs mount /mnt:/media, ...)
+      description: the Path to your library (/media, or a nfs mount /mnt, ...)
       default: '/media'
     - variable: "PUID"
       type: "string"
@@ -26,5 +26,14 @@
       type: "string"
       label: "PGID"
       description: PGID (not required)
+    - variable: NET
+      description: "select Network type"
+      label: "Network"
+      type: enum   
+      options:
+        - host
+        - none
+      required: true
+      default: "host"
 plex:
   scale: 1

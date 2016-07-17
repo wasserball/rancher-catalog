@@ -7,7 +7,7 @@
       type: "string"
       label: "PORT"
       description: Frontend Port of Plex
-      default: 32400
+      default: 80
     - variable: "MYSQL_ROOT_PASSWORD"
       type: "string"
       label: "MYSQL_ROOT_PASSWORD"
