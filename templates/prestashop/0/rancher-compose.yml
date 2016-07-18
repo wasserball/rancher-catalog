@@ -12,7 +12,7 @@
       type: "string"
       label: "MYSQL_ROOT_PASSWORD"
       description: Password
-      default: "mysql"
+      default: "presta12"
     - variable: "MYSQL_DATABASE"
       type: "string"
       label: "MYSQL_DATABASE"

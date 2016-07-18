@@ -1,5 +1,9 @@
 prestashop:
   image: prestashop/prestashop:latest
+  volumes:
+    - "/data/prestashop/themes:/var/www/html/themes"
+    - "/data/prestashop/modules:/var/www/html/modules"
+    - "/data/prestashop/override:/var/www/html/override"
   environment:
     - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     - MYSQL_DATABASE=${MYSQL_DATABASE}
@@ -11,7 +15,6 @@ prestashop:
     - mysql
   net: ${NET}
 mysql:
-  image: mysql
   image: mysql:latest
   volumes:
     - "/data/prestashop/db:/var/lib/mysql"
