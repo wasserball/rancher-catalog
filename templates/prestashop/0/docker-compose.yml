@@ -1,5 +1,5 @@
 prestashop:
-  image: prestashop/prestashop
+  image: prestashop/prestashop:latest
   environment:
     - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     - MYSQL_DATABASE=${MYSQL_DATABASE}
@@ -12,3 +12,11 @@ prestashop:
   net: ${NET}
 mysql:
   image: mysql
+  image: mysql:latest
+  volumes:
+    - "/data/prestashop/db:/var/lib/mysql"
+  environment:
+    - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    - MYSQL_DATABASE=${MYSQL_DATABASE}
+    - MYSQL_USER=my-${MYSQL_USER}
+    - MYSQL_PASSWORD=${MYSQL_PASSWORD}
