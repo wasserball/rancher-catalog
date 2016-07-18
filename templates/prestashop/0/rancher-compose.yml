@@ -1,34 +1,43 @@
 .catalog:
-  name: prestashop
+  name: Prestashop
   version: v0.1
-  description: prestashop
+  description: Prestashop
   questions:
     - variable: "PORT"
       type: "string"
       label: "PORT"
-      description: Frontend Port of Plex
+      description: Frontend Port of Prestashop
       default: 80
     - variable: "MYSQL_ROOT_PASSWORD"
       type: "string"
       label: "MYSQL_ROOT_PASSWORD"
-      description: Frontend Port of Plex
+      description: Password
       default: "mysql"
     - variable: "MYSQL_DATABASE"
       type: "string"
       label: "MYSQL_DATABASE"
-      description: Frontend Port of Plex
+      description: database name
       default: "prestashop"
     - variable: "MYSQL_USER"
       type: "string"
       label: "MYSQL_USER"
-      description: Frontend Port of Plex
+      description: database user
       default: "prestashop"
     - variable: "MYSQL_PASSWORD"
       type: "string"
       label: "MYSQL_PASSWORD"
-      description: Frontend Port of Plex
+      description: database Password
       default: "presta12"
-
+    - variable: NET
+      description: "select Network type"
+      label: "Network"
+      type: enum   
+      options:
+        - host
+        - managed
+        - none
+      required: true
+      default: "host"
 prestashop:
   scale: 1
 mysql:

@@ -9,6 +9,6 @@ prestashop:
     - ${PORT}:80
   links:
     - mysql
-  net: "host"
+  net: ${NET}
 mysql:
   image: mysql
