@@ -11,7 +11,7 @@ services:
     volumes:
       - ${PATHCONFIG}:/config
       - ${PATHMEDIA}:/data
-    net: ${NET}
+    network_mode: ${NET}
     labels:
       io.rancher.container.pull_image: always
       io.rancher.container.dns: 'true'
