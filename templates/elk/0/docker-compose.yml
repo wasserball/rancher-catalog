@@ -1,0 +1,21 @@
+version: '2'
+services:
+  elasticsearch:
+    image: elasticsearch:5.1
+    ports:
+      - "${elasticsearch_public_port_rest}:9200"
+      - "${elasticsearch_public_port}:9300"
+  kibana:
+    image: kibana:5.1
+    ports:
+      - "${kibana_public_port}:5601"
+    links:
+      - elasticsearch
+  logstash:
+    image: logstash:5.1
+    links:
+      - elasticsearch
+
+
+    
+

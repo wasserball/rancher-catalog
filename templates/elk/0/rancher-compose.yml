@@ -1,0 +1,23 @@
+.catalog:
+  name: "ELK"
+  version: "5.1"
+  description: "ELK Stack"
+  questions:
+    - variable: "elasticsearch_public_port_rest"
+      label: "Public Rest Port (elasticsearch)"
+      description: "Unique public port for RESTful API"
+      type: "int"
+      default: 9200
+      required: true
+    - variable: "elasticsearch_public_port"
+      label: "Public Port (elasticsearch)"
+      description: "Unique public port"
+      type: "int"
+      default: 9300
+      required: true
+    - variable: "kibana_public_port"
+      label: "Public Port (kibana)"
+      description: "Unique public port"
+      type: "int"
+      default: 5601
+      required: true

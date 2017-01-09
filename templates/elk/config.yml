@@ -1,0 +1,4 @@
+name: "ELK ( Kibana 5.1, Elasticsearch 5.1, Logstash 5.1"
+description: "ELK Stack"
+version: "5.1"
+category: ELK
