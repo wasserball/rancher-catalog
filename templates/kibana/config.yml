@@ -1,4 +1,4 @@
-name: "Kibana 4"
+name: "Kibana 5"
 description: "Visualization dashboard"
-version: "4.4.2-rancher1"
+version: "5.1"
 category: ELK
