@@ -1,0 +1,4 @@
+.catalog:
+  name: "ELK"
+  version: "5.1"
+  description: "ELK Stack"
