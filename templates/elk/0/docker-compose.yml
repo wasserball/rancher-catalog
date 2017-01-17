@@ -14,7 +14,7 @@ services:
       nofile:
         soft: 65536
         hard: 65536
-    mem_limit: 1000m
+    mem_limit: 1000000000 # 1GB
     cap_add:
       - IPC_LOCK
     volumes:
@@ -37,7 +37,7 @@ services:
       nofile:
         soft: 65536
         hard: 65536
-    mem_limit: 1000m
+    mem_limit: 1000000000
     cap_add:
       - IPC_LOCK
     volumes:
