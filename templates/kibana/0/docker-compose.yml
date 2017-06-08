@@ -6,6 +6,8 @@ services:
       - "${SERVER_PORT}:5601"
     environment:
       SERVER_NAME: ${SERVER_NAME}
-      ELASTICSEARCH_URL:  http://${ELASTICSEARCH_LINK}:9200
+      ELASTICSEARCH_URL:  http://es-master:9200
       ELASTICSEARCH_USERNAME: elastic
       ELASTICSEARCH_PASSWORD: changeme
+    external_links:
+      - ${ELASTICSEARCH_LINK}:es-master
