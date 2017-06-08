@@ -17,7 +17,7 @@ version: '2'
       default: 5601
       type: "int"
     - variable: "ELASTICSEARCH_LINK"
-      description: "select Elasticsearch Service"
+      description: "select Elasticsearch Master Service (Stack es-cluster --> es-master)"
       label: "Service:"
       required: true
       default: "es-cluster/es-master"
