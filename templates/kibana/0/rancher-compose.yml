@@ -20,7 +20,7 @@ version: '2'
       description: "select Elasticsearch Service"
       label: "Service:"
       required: true
-      default: "es-master"
+      default: "es-cluster/es-master"
       type: "service"
     - variable: "ELASTICSEARCH_USERNAME"
       description: "Elasticsearch Username"
