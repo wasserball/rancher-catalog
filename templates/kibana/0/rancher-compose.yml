@@ -5,35 +5,35 @@ version: '2'
   description: "Kibana"
   questions:
     - variable: "SERVER_NAME"
-        description: "name of Server"
-        label: "Name:"
-        required: true
-        default: "kibana.example.org"
-        type: "string"
+      description: "name of Server"
+      label: "Name:"
+      required: true
+      default: "kibana.example.org"
+      type: "string"
     - variable: "SERVER_PORT"
-          description: "Kibana Port"
-          label: "Port:"
-          required: true
-          default: 5601
-          type: "int"
+      description: "Kibana Port"
+      label: "Port:"
+      required: true
+      default: 5601
+      type: "int"
     - variable: "ELASTICSEARCH_LINK"
-        description: "select Elasticsearch Service"
-        label: "Service:"
-        required: true
-        default: "es-master"
-        type: "service"
+      description: "select Elasticsearch Service"
+      label: "Service:"
+      required: true
+      default: "es-master"
+      type: "service"
     - variable: "ELASTICSEARCH_USERNAME"
-        description: "Elasticsearch Username"
-        label: "Username:"
-        required: true
-        default: "elastic"
-        type: "string"
+      description: "Elasticsearch Username"
+      label: "Username:"
+      required: true
+      default: "elastic"
+      type: "string"
     - variable: "ELASTICSEARCH_PASSWORD"
-        description: "Elasticsearch Password"
-        label: "Password:"
-        required: true
-        default: "changeme"
-        type: "string"
+      description: "Elasticsearch Password"
+      label: "Password:"
+      required: true
+      default: "changeme"
+      type: "string"
 services:
   kibana:
     scale: 1
