@@ -1,0 +1,9 @@
+logrotate:
+  image: tutum/logrotate
+  labels:
+    # Make logrotate a global service
+    io.rancher.scheduler.global: 'true'
+  volumes:
+    - /var/lib/docker/containers:/var/lib/docker/containers:rw
+
+

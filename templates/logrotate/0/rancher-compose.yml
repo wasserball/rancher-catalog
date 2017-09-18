@@ -1,0 +1,5 @@
+.catalog:
+  name: logrotate
+  version: v0.1
+  description: logrotate
+

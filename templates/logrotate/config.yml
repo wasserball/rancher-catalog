@@ -1,0 +1,4 @@
+name: Logrotate from tutumcloud
+description: removes logs in "/var/lib/docker/containers/*/*.log.*" -maxsize 10M
+version: 0.2-rancher1
+category: Logging
