@@ -23,10 +23,12 @@ version: '2'
       type: "string"
       label: "PUID"
       description: GroupID (not required)
+      default: 1100
     - variable: "PGID"
       type: "string"
       label: "PGID"
       description: PGID (not required)
+      default: 1100
     - variable: NET
       description: "select Network type"
       label: "Network"
