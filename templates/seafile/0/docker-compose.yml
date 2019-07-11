@@ -1,0 +1,25 @@
+version: '2'
+services:
+  seafile:
+    image: foxel/seafile:6.1.0
+    environment:
+      SEAFILE_URL: '${seafile_url}'
+      MYSQL_PORT: '3306'
+    links:
+      - mysql
+    volumes:
+      - /seafile/seafile:/seafile
+  mysql:
+    environment:
+      MYSQL_ROOT_PASSWORD: e9hV4IjL3^57
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 3#ZO7gd3P106
+    volumes:
+      - /seafile/mysql:/var/lib/mysql
+    image: mysql:5.7
+
+volumes:
+  mysql:
+    driver: local
+  seafile:
+    driver: local

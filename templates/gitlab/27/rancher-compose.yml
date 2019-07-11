@@ -1,0 +1,27 @@
+.catalog:
+  name: Gitlab Community
+  version: "10.8.0"
+  description: |
+    Gitlab CE is a free GitHub alternative
+  minimum_rancher_version: v0.56.0
+  maintainer: "Alexis Ducastel <alexis@ducastel.net>"
+  uuid: gitlab-0
+  questions:
+    - variable: "gitlab_hostname"
+      description: "Gitlab hostname (without uri scheme http:// or https://)"
+      label: "Hostname:"
+      required: true
+      default: "git.team14.at"
+      type: "string"
+    - variable: "gitlab_omnipus_prefix"
+      label: "Gitlab external_url prefix:"
+      description: |
+        This is needed for the docker-compose file to set the correct external_url
+      default: 'https://'
+      required: true
+      type: "string"
+      options:
+        - 'https://'
+gitlab-server:
+  scale: 1
+  retain_ip: true

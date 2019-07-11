@@ -1,0 +1,12 @@
+.catalog:
+  name: seafile
+  version: latest
+  description: |
+    seafile
+  questions:
+    - variable: "seafile_url"
+      description: "Seafile URL"
+      label: "URL:"
+      required: true
+      default: "https://seafile.team14.at"
+      type: "string"
